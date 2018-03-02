@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "939333158931",
+    "firebase_url": "https://appmed-bacbd.firebaseio.com",
+    "project_id": "appmed-bacbd",
+    "storage_bucket": "appmed-bacbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939333158931:android:3a1b7b5cc221c853",
+        "android_client_info": {
+          "package_name": "co.edu.upb.calidad.appmed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939333158931-qccjd1s8ehmaj0khfh39b135tih266e7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQM3XHby40ocRuncO403yapoyV9fOQ0jM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
