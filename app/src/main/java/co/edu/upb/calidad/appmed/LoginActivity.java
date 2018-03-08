@@ -22,7 +22,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         callbackManager = CallbackManager.Factory.create();
         loginButton = findViewById(R.id.login_button);
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
@@ -44,6 +43,8 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+
+    //Método para redirigir a la pantalla de inicio.
     private void goMainScreen() {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);

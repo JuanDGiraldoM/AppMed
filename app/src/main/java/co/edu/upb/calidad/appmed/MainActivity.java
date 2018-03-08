@@ -85,6 +85,8 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+
+    //Método para redirigir a la pantalla de login
     private void goLoginScreen() {
         Intent intent = new Intent(this,LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -92,6 +94,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    //Método para cerrar la aplicación.
     public void logout(View view) {
         LoginManager.getInstance().logOut();
         goLoginScreen();
