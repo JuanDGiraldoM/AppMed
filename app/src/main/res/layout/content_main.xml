@@ -15,7 +15,7 @@
         android:layout_centerVertical="true"
         android:text="Medellín, Colombia"
         android:textColor="@color/colorAccent"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
 
 </RelativeLayout>
