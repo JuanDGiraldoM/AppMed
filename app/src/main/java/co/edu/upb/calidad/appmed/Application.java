@@ -4,11 +4,14 @@ import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 
 /**
- * Created by Cristian on 15/02/2018.
+ * Clase de Aplicación
  */
 
 public class Application extends android.app.Application {
 
+    /**
+     * Método constructor de la clase
+     */
     @Override
     public void onCreate() {
         super.onCreate();
