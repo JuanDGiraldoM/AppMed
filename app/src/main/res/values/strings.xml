@@ -23,4 +23,6 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="content_description_icon">Logo de la Aplicación</string>
 </resources>

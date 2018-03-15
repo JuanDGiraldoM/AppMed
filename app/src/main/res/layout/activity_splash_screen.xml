@@ -6,12 +6,13 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="77dp"
-        android:src="@drawable/icon_appmed" />
+        android:layout_marginTop="77sp"
+        android:src="@drawable/icon_appmed"
+        android:contentDescription="@string/content_description_icon" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -20,6 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/background"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp" />
+        android:layout_marginTop="41sp" />
 
 </RelativeLayout>
