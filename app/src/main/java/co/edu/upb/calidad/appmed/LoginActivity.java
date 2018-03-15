@@ -11,11 +11,18 @@ import com.facebook.FacebookException;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
+/**
+ * Clase Login que realiza la autenticación en Facebook, Google
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private LoginButton loginButton;
     private CallbackManager callbackManager;
 
+    /**
+     * Método que crea la instancia del objeto
+     * @param savedInstanceState savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +49,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    //Método para redirigir a la pantalla de inicio.
+    /**
+     * Método para redirigir a la pantalla de inicio
+     */
     private void goMainScreen() {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -50,6 +59,12 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Método que obtiene el resultado de la actividad
+     * @param requestCode requestCode
+     * @param resultCode resultCode
+     * @param data data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

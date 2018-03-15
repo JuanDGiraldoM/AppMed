@@ -15,9 +15,16 @@ import android.view.MenuItem;
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 
+/**
+ * Actividad Main
+ */
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    /**
+     * Método constructor de la actividad
+     * @param savedInstanceState savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +46,9 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * Método que captura el evento generado al presionar la tecla de retroceso
+     */
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -49,6 +59,11 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * Método verifica la creación del menú de opciones
+     * @param menu menu
+     * @return true o false, estado de la creación del menú
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -56,6 +71,11 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * Método que captura el evento generado al presionar un ítem del menú de opciones
+     * @param item item seleccionado
+     * @return true cuando finaliza correctamente
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -71,7 +91,11 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
+    /**
+     * Método que captura los eventos generados al presionar algún ítem del menú de navegación
+     * @param item item seleccionado
+     * @return true cuando finaliza correctamente
+     */
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -84,7 +108,9 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    //Método para redirigir a la pantalla de login
+    /**
+     * Método para redirigir a la pantalla inicial
+     */
     private void goLoginScreen() {
         Intent intent = new Intent(this,LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -92,7 +118,9 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    //Método para cerrar la aplicación.
+    /**
+     * Método para cerrar la aplicación
+     */
     public void logout(View view) {
         LoginManager.getInstance().logOut();
         goLoginScreen();
