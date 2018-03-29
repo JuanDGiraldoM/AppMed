@@ -5,33 +5,41 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_station"
+            android:icon="@drawable/ic_local_gas_station_black_24dp"
+            android:title="@string/nav_station" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_hospital"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="@string/nav_hospital" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_hotel"
+            android:icon="@drawable/ic_hotel_black_24dp"
+            android:title="@string/nav_hotel" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_museum"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="@string/nav_museum" />
+        <item
+            android:id="@+id/nav_park"
+            android:icon="@drawable/ic_wb_sunny_black_24dp"
+            android:title="@string/nav_park" />
+        <item
+            android:id="@+id/nav_wifi"
+            android:icon="@drawable/ic_wifi_black_24dp"
+            android:title="@string/nav_wifi" />
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="@string/nav_restaurant" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_map"
+                android:icon="@drawable/ic_map_black_24dp"
+                android:title="@string/map" />
         </menu>
     </item>
 
