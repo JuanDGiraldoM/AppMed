@@ -6,4 +6,16 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Encabezado de Navegación</string>
     <string name="action_settings">Configuración</string>
+
+    <string name="nav_hotel">Hoteles</string>
+    <string name="nav_museum">Museos</string>
+    <string name="nav_wifi">Puntos Wi-Fi Gratis</string>
+    <string name="nav_station">Estaciones de Servicio</string>
+    <string name="nav_park">Parques</string>
+    <string name="nav_restaurant">Restaurantes</string>
+    <string name="nav_hospital">Hospitales</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="category">Categoría</string>
+    <string name="map">Mapa</string>
+    <string name="others">Otros</string>
 </resources>
