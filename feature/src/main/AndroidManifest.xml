@@ -18,6 +18,19 @@
                     android:pathPattern="/.*"
                     android:scheme="https" />
             </intent-filter>
+        </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter android:order="1">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="upb.edu.co"
+                    android:pathPattern="/.*"
+                    android:scheme="https" />
+            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
