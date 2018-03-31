@@ -115,15 +115,15 @@ public class MainActivity extends AppCompatActivity
         int i = item.getItemId();
 
         if (i == R.id.nav_hospital) {
-            intent.putExtra("activity", Utilities.HOSPITALES);
+            intent.putExtra("activity", Utilities.HOSPITALS);
             startActivity(intent);
             return true;
         } else if (i == R.id.nav_wifi) {
-            intent.putExtra("activity", Utilities.ESTACIONES_WIFI);
+            intent.putExtra("activity", Utilities.WIFI_STATIONS);
             startActivity(intent);
             return true;
         } else if (i == R.id.nav_station) {
-            intent.putExtra("activity", Utilities.ESTACIONES_SERVICIO);
+            intent.putExtra("activity", Utilities.SERVICE_STATIONS);
             startActivity(intent);
             return true;
 

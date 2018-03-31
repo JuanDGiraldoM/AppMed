@@ -16,13 +16,13 @@ import static java.lang.annotation.RetentionPolicy.SOURCE;
 
 public class Utilities {
 
-    public static final int ESTACIONES_SERVICIO = 0;
-    public static final int HOSPITALES = 1;
-    public static final int HOTELES = 2;
-    public static final int MUSEOS = 3;
-    public static final int PARQUES = 4;
-    public static final int ESTACIONES_WIFI = 5;
-    public static final int RESTAURANTES = 6;
+    public static final int SERVICE_STATIONS = 0;
+    public static final int HOSPITALS = 1;
+    public static final int HOTELS = 2;
+    public static final int MUSEUMS = 3;
+    public static final int PARKS = 4;
+    public static final int WIFI_STATIONS = 5;
+    public static final int RESTAURANTS = 6;
 
     private @Activity
     int activity;
@@ -43,13 +43,13 @@ public class Utilities {
 
     @Retention(SOURCE)
     @IntDef({
-            ESTACIONES_SERVICIO,
-            HOSPITALES,
-            HOTELES,
-            MUSEOS,
-            PARQUES,
-            ESTACIONES_WIFI,
-            RESTAURANTES
+            SERVICE_STATIONS,
+            HOSPITALS,
+            HOTELS,
+            MUSEUMS,
+            PARKS,
+            WIFI_STATIONS,
+            RESTAURANTS
     })
 
     public @interface Activity {
