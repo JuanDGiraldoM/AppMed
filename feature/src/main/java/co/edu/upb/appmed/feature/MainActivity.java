@@ -109,8 +109,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
 
-        //TODO: Actividad con Listado de Sitios
-        Intent intent = new Intent(this, ListadoSitiosActivity.class);
+        Intent intent = new Intent(this, SitesListActivity.class);
 
         int i = item.getItemId();
 
@@ -130,7 +129,7 @@ public class MainActivity extends AppCompatActivity
 
         } //TODO: else if (i == R.id.nav_map)
         else {
-            DrawerLayout drawer = findViewById(co.edu.upb.appmed.R.id.drawer_layout);
+            DrawerLayout drawer = findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
         }
