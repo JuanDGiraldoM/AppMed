@@ -15,7 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import co.edu.upb.appmed.feature.Utilities.Utilities;
-
+import com.facebook.AccessToken;
+import com.facebook.login.LoginManager;
 /**
  * Actividad principal
  */
@@ -52,6 +53,10 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        if (AccessToken.getCurrentAccessToken() == null) {
+            goLoginScreen();
+        }
     }
 
 
@@ -134,4 +139,16 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
     }
+
+    private void goLoginScreen() {
+        Intent intent = new Intent(this, LogInActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    public void logout(View view) {
+        LoginManager.getInstance().logOut();
+        goLoginScreen();
+    }
+
 }

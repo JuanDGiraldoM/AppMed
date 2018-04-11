@@ -1,5 +1,7 @@
 <resources>
 
+    <string name="facebook_app_id">1899826096994876</string>
+    <string name="fb_login_protocol_scheme">fb1899826096994876</string>
     <string name="navigation_drawer_open">Abrir panel de navegación</string>
     <string name="navigation_drawer_close">Cerrar panel de navegación</string>
     <string name="nav_header_title">Android Studio</string>

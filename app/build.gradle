@@ -25,6 +25,7 @@ android {
 }
 
 dependencies {
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
     implementation project(':feature')
     implementation project(':base')
     compile 'com.uber.sdk:rides-android:0.5.3'
