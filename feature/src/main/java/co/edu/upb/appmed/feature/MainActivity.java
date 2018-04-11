@@ -1,5 +1,4 @@
 package co.edu.upb.appmed.feature;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,8 +12,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import co.edu.upb.appmed.feature.Utilities.Utilities;
+import com.uber.sdk.android.core.UberSdk;
+import com.uber.sdk.core.auth.Scope;
+import com.uber.sdk.rides.client.SessionConfiguration;
+
+import java.util.Arrays;
 
 /**
  * Actividad principal
@@ -52,6 +55,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // Creacion de sesion para pedir uber
+        // Client id y Server token obtenidos tras registrar la app
+        SessionConfiguration configuration = new SessionConfiguration.Builder()
+                .setClientId("YqJj9xgQdj6bBh8519ENo7n_Q5tUQKE8")
+                .setServerToken("_ibbEf36cjMQ6bOS6dTdDeTWSjugfqz3kPnpuvK8")
+                .setScopes(Arrays.asList(Scope.RIDE_WIDGETS))
+                .setEnvironment(SessionConfiguration.Environment.PRODUCTION)
+                .build();
+        UberSdk.initialize(configuration);
     }
 
 
@@ -134,4 +147,9 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
     }
+
+
+
+
+
 }

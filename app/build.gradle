@@ -21,11 +21,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    
 
 }
 
 dependencies {
     implementation project(':feature')
     implementation project(':base')
-    compile 'com.uber.sdk:rides-android:0.5.3'
+
 }
