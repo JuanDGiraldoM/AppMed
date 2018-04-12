@@ -1,6 +1,7 @@
 package co.edu.upb.appmed.feature;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
+
 import co.edu.upb.appmed.feature.Utilities.Utilities;
 import com.uber.sdk.android.core.UberSdk;
 import com.uber.sdk.core.auth.Scope;
@@ -65,6 +68,35 @@ public class MainActivity extends AppCompatActivity
                 .setEnvironment(SessionConfiguration.Environment.PRODUCTION)
                 .build();
         UberSdk.initialize(configuration);
+        RideRequestButton requestButton = new RideRequestButton(MainActivity.this);
+        RelativeLayout layout = new RelativeLayout(this);
+        layout.addView(requestButton);
+/*
+
+        final LoginCallback loginCallback = new LoginCallback() {
+            @Override
+            public void onLoginCancel() {
+                //Usuario canceló login
+            }
+
+            @Override
+            public void onLoginError(@NonNull AuthenticationError error) {
+                //Error al hacer login
+            }
+
+            @Override
+            public void onLoginSuccess(@NonNull AccessToken accessToken) {
+                //login correcto
+            }
+
+            @Override
+            public void onAuthorizationCodeReceived(@NonNull String authorizationCode) {
+
+            }
+
+            AccessTokenManager accessTokenManager = new AccessTokenManager(MainActivity.this);
+            LoginManager loginManager = new LoginManager(loginCallback,accessTokenManager);
+        }*/
     }
 
 
