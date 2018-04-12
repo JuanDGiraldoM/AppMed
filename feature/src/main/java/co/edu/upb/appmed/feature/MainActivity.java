@@ -17,6 +17,12 @@ import android.widget.RelativeLayout;
 
 import co.edu.upb.appmed.feature.Utilities.Utilities;
 import com.uber.sdk.android.core.UberSdk;
+import com.uber.sdk.android.core.auth.AccessTokenManager;
+import com.uber.sdk.android.core.auth.AuthenticationError;
+import com.uber.sdk.android.core.auth.LoginCallback;
+import com.uber.sdk.android.core.auth.LoginManager;
+import com.uber.sdk.android.rides.RideRequestButton;
+import com.uber.sdk.core.auth.AccessToken;
 import com.uber.sdk.core.auth.Scope;
 import com.uber.sdk.rides.client.SessionConfiguration;
 
@@ -59,8 +65,9 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        // Creacion de sesion para pedir uber
-        // Client id y Server token obtenidos tras registrar la app
+        /**
+         * Creacion de sesión para usar api de uber
+         */
         SessionConfiguration configuration = new SessionConfiguration.Builder()
                 .setClientId("YqJj9xgQdj6bBh8519ENo7n_Q5tUQKE8")
                 .setServerToken("_ibbEf36cjMQ6bOS6dTdDeTWSjugfqz3kPnpuvK8")
@@ -71,32 +78,7 @@ public class MainActivity extends AppCompatActivity
         RideRequestButton requestButton = new RideRequestButton(MainActivity.this);
         RelativeLayout layout = new RelativeLayout(this);
         layout.addView(requestButton);
-/*
 
-        final LoginCallback loginCallback = new LoginCallback() {
-            @Override
-            public void onLoginCancel() {
-                //Usuario canceló login
-            }
-
-            @Override
-            public void onLoginError(@NonNull AuthenticationError error) {
-                //Error al hacer login
-            }
-
-            @Override
-            public void onLoginSuccess(@NonNull AccessToken accessToken) {
-                //login correcto
-            }
-
-            @Override
-            public void onAuthorizationCodeReceived(@NonNull String authorizationCode) {
-
-            }
-
-            AccessTokenManager accessTokenManager = new AccessTokenManager(MainActivity.this);
-            LoginManager loginManager = new LoginManager(loginCallback,accessTokenManager);
-        }*/
     }
 
 
