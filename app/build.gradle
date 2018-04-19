@@ -28,5 +28,5 @@ android {
 dependencies {
     implementation project(':feature')
     implementation project(':base')
-    implementation 'com.facebook.android:facebook-android-sdk:4.32.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
 }
