@@ -2,50 +2,50 @@ package co.edu.upb.appmed.feature.Entities;
 
 public class ServiceStation {
 
-    private String bandera;
-    private String municipio;
-    private double precio;
-    private String producto;
+    private String flag;
+    private String district;
+    private double price;
+    private String product;
 
     public ServiceStation() {
     }
 
-    public ServiceStation(String bandera, String municipio, double precio, String producto) {
-        this.bandera = bandera;
-        this.municipio = municipio;
-        this.precio = precio;
-        this.producto = producto;
+    public ServiceStation(String flag, String district, double price, String product) {
+        this.flag = flag;
+        this.district = district;
+        this.price = price;
+        this.product = product;
     }
 
-    public String getBandera() {
-        return bandera;
+    public String getFlag() {
+        return flag;
     }
 
-    public void setBandera(String bandera) {
-        this.bandera = bandera;
+    public void setFlag(String flag) {
+        this.flag = flag;
     }
 
-    public String getMunicipio() {
-        return municipio;
+    public String getDistrict() {
+        return district;
     }
 
-    public void setMunicipio(String municipio) {
-        this.municipio = municipio;
+    public void setDistrict(String district) {
+        this.district = district;
     }
 
-    public double getPrecio() {
-        return precio;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public String getProducto() {
-        return producto;
+    public String getProduct() {
+        return product;
     }
 
-    public void setProducto(String producto) {
-        this.producto = producto;
+    public void setProduct(String product) {
+        this.product = product;
     }
 }
