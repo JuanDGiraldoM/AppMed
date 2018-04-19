@@ -1,4 +1,5 @@
 package co.edu.upb.appmed.feature;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,6 +17,7 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 
 import co.edu.upb.appmed.feature.Utilities.Utilities;
+
 import com.uber.sdk.android.core.UberSdk;
 import com.uber.sdk.android.core.auth.AccessTokenManager;
 import com.uber.sdk.android.core.auth.AuthenticationError;
@@ -46,15 +48,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -152,18 +145,16 @@ public class MainActivity extends AppCompatActivity
             intent.putExtra("activity", Utilities.SERVICE_STATIONS);
             startActivity(intent);
             return true;
-
-
-        } //TODO: else if (i == R.id.nav_map)
-        else {
+        } else if (i == R.id.nav_map) {
+            Intent intent_maps = new Intent(this, MapsActivity.class);
+            startActivity(intent_maps);
+            return true;
+        } else {
             DrawerLayout drawer = findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
         }
     }
-
-
-
 
 
 }

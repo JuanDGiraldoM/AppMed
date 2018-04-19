@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AppMed</string>
+    <string name="app_subname">Turismo</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="fb_login_protocol_scheme">fb1899826096994876</string>
 </resources>

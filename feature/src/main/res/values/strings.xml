@@ -20,4 +20,6 @@
     <string name="category">Categoría</string>
     <string name="map">Mapa</string>
     <string name="others">Otros</string>
+    <string name="main">Medellín, Colombia</string>
+    <string name="about">Acerca de</string>
 </resources>
