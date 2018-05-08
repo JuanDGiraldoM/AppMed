@@ -1,6 +1,8 @@
 package co.edu.upb.appmed.feature.Entities;
 
-public class ServiceStation {
+import com.google.android.gms.maps.model.LatLng;
+
+public class ServiceStation extends Site {
 
     private String flag;
     private String district;
@@ -10,7 +12,8 @@ public class ServiceStation {
     public ServiceStation() {
     }
 
-    public ServiceStation(String flag, String district, double price, String product) {
+    public ServiceStation(String name, String address, LatLng location, String flag, String district, double price, String product) {
+        super(name, address, location);
         this.flag = flag;
         this.district = district;
         this.price = price;
