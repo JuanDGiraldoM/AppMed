@@ -14,4 +14,19 @@ public class SiteHolder extends RecyclerView.ViewHolder {
         super(itemView);
         this.view = itemView;
     }
+
+    public void setName(String name){
+        TextView field = view.findViewById(R.id.txtName);
+        field.setText(name);
+    }
+
+    public void setAddress(String address){
+        TextView field = view.findViewById(R.id.txtAddress);
+        field.setText(address);
+    }
+
+    public void setExtra(String extra){
+        TextView field = view.findViewById(R.id.txtExtra);
+        field.setText(extra);
+    }
 }
