@@ -1,4 +1,3 @@
-
 {
   "project_info": {
     "project_number": "939333158931",
@@ -11,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:939333158931:android:8d70e0eba2aa8d2e",
         "android_client_info": {
-          "package_name": "co.edu.upb.appmed"
+          "package_name": "co.edu.upb.appmed.app"
         }
       },
       "oauth_client": [
