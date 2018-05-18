@@ -29,6 +29,6 @@ dependencies {
     implementation project(':feature')
     implementation project(':base')
     implementation 'com.facebook.android:facebook-android-sdk:4.32.0'
-    compile 'com.google.firebase:firebase-core:11.8.0'
+    implementation 'com.google.firebase:firebase-core:15.0.2'
 }
 
