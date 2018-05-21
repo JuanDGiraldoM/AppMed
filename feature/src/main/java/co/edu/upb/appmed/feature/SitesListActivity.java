@@ -110,7 +110,7 @@ public class SitesListActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(co.edu.upb.appmed.R.menu.menu_place, menu);
+        getMenuInflater().inflate(R.menu.menu_place, menu);
         return true;
     }
 
