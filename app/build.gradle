@@ -3,16 +3,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
 
-
-
     defaultConfig {
         applicationId "co.edu.upb.appmed.app"
         minSdkVersion 23
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-
-
     }
 
     buildTypes {
@@ -21,14 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    
-
 }
 
 dependencies {
     implementation project(':feature')
     implementation project(':base')
-    implementation 'com.facebook.android:facebook-android-sdk:4.32.0'
-    implementation 'com.google.firebase:firebase-core:15.0.2'
 }
 
+apply plugin: 'com.google.gms.google-services'
