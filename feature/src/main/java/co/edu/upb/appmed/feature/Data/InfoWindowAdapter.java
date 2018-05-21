@@ -8,6 +8,8 @@ import android.widget.TextView;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.Marker;
 
+import co.edu.upb.appmed.feature.R;
+
 public class InfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
 
     private final View mWindow;
